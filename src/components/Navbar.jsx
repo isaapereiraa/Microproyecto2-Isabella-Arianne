@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 
@@ -22,9 +21,9 @@ export const Navbar = () => {
                 <nav>
                     {state?.logged && (
                         <>
+                            <Link to='/perfil'>Perfil</Link>
                             <Link to='/buscador'>Buscador</Link>
                             <Link to='/clubes'>Clubes</Link>
-                            <Link to='/perfil'>Perfil</Link>
                         </>
                     )}
                 </nav>
