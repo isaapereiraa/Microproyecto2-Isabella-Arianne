@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
-import { Home, Login, Registro } from "../pages";
+import Home from "../pages/Home";
+import { Login, Registro } from "../pages";
 import { PrivateRoute } from "./PrivateRoute";
 import Clubes from "../pages/Clubes";
 import Perfil from "../pages/Perfil";
