@@ -1,0 +1,51 @@
+/* Estilos base para la barra de navegación */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links nav {
+  margin-right: auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.btn-logout {
+  margin-left: 10px;
+}
+
+/* Estilos para pantallas pequeñas (responsive) */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Cambiar a dirección vertical en pantallas pequeñas */
+      padding: 10px; /* Reducir el padding para ahorrar espacio */
+  }
+
+  .nav-links {
+      margin-top: 10px; /* Espacio entre los elementos en la barra de navegación */
+  }
+
+  .nav-links nav {
+      margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+  }
+
+  .user {
+      margin-top: 10px; /* Espacio entre el usuario y los enlaces */
+  }
+
+  .btn-logout {
+      margin-left: 0; /* Eliminar el margen izquierdo del botón de Cerrar sesión */
+      margin-top: 10px; /* Espacio arriba del botón en pantallas pequeñas */
+  }
+}
