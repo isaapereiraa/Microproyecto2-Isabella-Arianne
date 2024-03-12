@@ -1,10 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export const Profile = () => {
-  return (
-    <h1>
-        Esta es la pagina del perfil
-    </h1>
-  )
+export const Perfil = () => {
+    return (
+        <h1>Perfil</h1>
+    )
 }
-

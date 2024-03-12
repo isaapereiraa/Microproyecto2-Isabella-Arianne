@@ -1,14 +1,9 @@
-import React from 'react';
-import styles from "./Tarjeta.module.css";
+import React from "react";
+import styles from './Tarjeta.module.css';
 
 function Tarjeta({ usuario, games }) {
   return (
-    <div style={{
-      border: "1px solid #ccc",
-      borderRadius: "8px",
-      padding: "16px",
-      width: "300px",
-      }}>
+    <div className={styles.Tarjeta}>
       <h2>{usuario.nombre}</h2>
       <p>{usuario.descripcion}</p>
       <h3>Videojuegos:</h3>
@@ -27,3 +22,4 @@ function Tarjeta({ usuario, games }) {
 }
 
 export default Tarjeta;
+
