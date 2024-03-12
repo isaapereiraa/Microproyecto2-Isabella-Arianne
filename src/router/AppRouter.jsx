@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
-import { Home, Login, Registro, Dashboard } from "../pages";
+import { Home, Login, Registro } from "../pages";
 import { PrivateRoute } from "./PrivateRoute";
 import Clubes from "../pages/Clubes";
-import { Perfil } from "../pages/Perfil";
+import Perfil from "../pages/Perfil";
 import Buscador from "../pages/Buscador";
+import Dashboard from "../pages/Dashboard";
 
 export const AppRouter = () => {
 	return (

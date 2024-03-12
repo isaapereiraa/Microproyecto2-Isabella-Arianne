@@ -1,7 +1,52 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export const Dashboard = () => {
+const Dashboard = () => {
     return (
-        <h1>Dashboard</h1>
-    )
-}
+        <div style={styles.container}>
+            <h1 style={styles.title}>Bienvenido al Club de Juegos de la UNIMET</h1>
+            <p style={styles.description}>Explora un mundo de diversión y competencia en nuestro club de juegos. ¡Únete a la comunidad de jugadores apasionados!</p>
+            <div style={styles.divider}></div>
+            <Link to="/clubes" style={styles.button}>Ir a Clubes</Link>
+        </div>
+    );
+};
+
+const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+        backgroundColor: '#f8f9fa', // Color de fondo
+        padding: '20px',
+        fontFamily: 'sans-serif', // Cambiar la fuente a una fuente genérica
+    },
+    title: {
+        fontSize: '2rem',
+        color: '#333',
+        marginBottom: '20px',
+    },
+    description: {
+        fontSize: '1.2rem',
+        color: '#666',
+        marginBottom: '20px',
+    },
+    divider: {
+        width: '100%',
+        height: '1px',
+        backgroundColor: '#ccc',
+        margin: '20px 0',
+    },
+    button: {
+        display: 'inline-block',
+        padding: '10px 20px',
+        backgroundColor: '#007bff',
+        color: '#fff',
+        textDecoration: 'none',
+        borderRadius: '5px',
+    },
+};
+
+export default Dashboard;

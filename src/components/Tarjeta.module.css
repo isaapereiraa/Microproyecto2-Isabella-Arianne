@@ -1,7 +1,3 @@
-body {
-    font-family: 'Noto Sans Khojki', sans-serif;
-}
-
 .Tarjeta {
     font-family: 'Noto Sans Khojki', sans-serif;
     border: 1px solid #ccc;
@@ -33,6 +29,16 @@ body {
 
 .Tarjeta strong {
     font-weight: bold;
+}
+
+.Tarjeta button {
+    margin-top: 16px; /* Alinear todos los botones a la misma altura */
+    padding: 8px 16px;
+    background-color: #295856; /* Cambiar el color del botón a un tono naranja */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Media queries para hacer los estilos responsive */

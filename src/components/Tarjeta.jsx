@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from 'react';
 import styles from './Tarjeta.module.css';
 
 function Tarjeta({ usuario, games }) {
+  const [afiliado, setAfiliado] = useState(false);
+
+  const handleAfiliacion = () => {
+    setAfiliado(!afiliado);
+  };
+
   return (
     <div className={styles.Tarjeta}>
       <h2>{usuario.nombre}</h2>
@@ -17,9 +23,11 @@ function Tarjeta({ usuario, games }) {
           );
         })}
       </ul>
+      <button onClick={handleAfiliacion}>
+        {afiliado ? 'Desafiliarse' : 'Afiliarse'}
+      </button>
     </div>
   );
 }
 
 export default Tarjeta;
-
